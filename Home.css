@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+nav#menu ul 
+{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -80px;
+    left: 0px;
+    
+}
+
+
+nav#menu li {
+    display: inline-block;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    padding: 10px;
+    margin: 50px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+nav#menu > img
+{
+    justify-content: flex-end;
+    padding: -20px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    background-color: #5C4033;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+    width: 1500px ;
+    height: 800px ;
+    position: absolute;
+    overflow: hidden;
+    left: 10px;
+}
+
+
+.foto{
+    align-items: flex-end;
+}
+.foto
+{
+    
+    width: 1100px;
+    height: 750px;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1)
+{
+    
+}
+.foto:nth-child(2)
+{
+    animation-delay: 5s;
+}
+.foto:nth-child(3)
+{
+    animation-delay: 10s;
+}
+.foto:nth-child(4)
+{
+    animation-delay: 15s;
+}
+
+
+.foto-logo
+{
+    width: 1508px;
+    height: 400PX;
+}
+
+#divBusca{
+    display: inline-block;
+    background-color:ghostwhite;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+  }
+   
+  #txtBusca{
+    
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
+#btnBusca
+{
+    align-items: flex-end;
+    height:32px;
+    width:32px;
+}
+
+#Descrição {
+    display: none;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+
+
